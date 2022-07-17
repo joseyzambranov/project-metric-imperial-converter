@@ -30,8 +30,9 @@ suite('Functional Tests', function() {
                 .end(function(err,res){
                     assert.equal(res.status,200);
                     assert.equal(res.body.initUnit,undefined);
+                    done()
                 })
-                done()
+                
 
             })
             test("Convert 3/7.2/4kg (invalid number)",function(done){
